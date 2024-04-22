@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html><!-- Mirrored from bitcointransactionacceleratorfast.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jun 2020 16:19:45 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- /Added by HTTrack -->
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta charset="UTF-8">
+    <title>bitcoin transaction accelerator - free btc accelerator</title>
+    <meta name="description" content="speed up your unconfirmed and stuck bitcon transaction. speed up btc transaction with the best bitcoin transaction accelerator ">
+    <meta name="keywords" content="confirm bitcoin transaction ,bitcoin, unconfirmed bitcoin transaction,btc accelerator, free btc accelerator,bitaccelerate, sosobtc accelerator, btc,confirmtx,confirmbtc, confirm bitcoin transaction faster,accelerer transaction bitcoin 2019, verify bitcoin transaction ,bitcoin transaction,bitaccelerate,confirmtx.com,confirmtx,tx,btcstrike ">
+    <link rel="stylesheet" href="index_files/semantic.css" type="text/css">
+    <link rel="stylesheet" href="index_files/particles.css" type="text/css">
+    <link rel="shortcut icon" href="http://generator-xlm.epizy.com/favicon.ico" type="image/x-icon">
+    <script src="index_files/jquery-3.5.0.min.js" type="text/javascript"></script>
+</head>
+<body style="background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */">
+<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1345" height="577"></canvas></div>
+<div class="ui raised very padded text container segment" style="margin-top:40px;text-align:center;">
+  
+    <img src="index_files/logo.png" alt="confirmbtc" width="338" height="56"><br>
+      <h1>Bitcoin Transaction Accelerator</h1>
+   
+    <p>
+    </p><form class="ui form">
+	<div class="field"><input type="text" name="last-name" placeholder="Enter your TXID" id="txid"></div>
+
+	</form>
+    <button class="ui positive button" style="font-size:18px;margin-top:10px;" id="acceleratenow">
+        <h2>Accelerate Now!</h2>
+    </button>
+    <br><br>
+    Last Block Found: <span id="blockcheck">Few Seconds ago by Slushpool</span>
+    <br>
+	
+	
+    <div id="error1" class="ui negative message" style="display:none;">
+        <div class="header" id="error" style="font-size:16px;">
+			Invalid TXID
+        </div>
+    </div>
+	
+    <div id="ok1" class="ui positive message" style="display:none;">
+        <div class="header" id="error" style="font-size:16px;">
+			We have received your Bitcoin transaction ID (TXID):<br>
+<span id="tx1">x</span><br>
+<a id="tx2" href="" target="_blank">(Check your transfer on Blockchain)</a><br><br>
+pay 0.000137 BTC to accelerate this transaction or complete tow offer to accelerate this transaction for free<br>
+
+<a href="https://cpbild.co/05a31b9" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Human verification</a>
+
+<div class="field-text-pre">Waiting for payment<span id="wait"></span>
+<div class="field-text-pre"></div>
+<div class="field-text-pre">Confirmations : 0/3</div>
+
+<script>
+var dots = window.setInterval( function() {
+    var wait = document.getElementById("wait");
+    if ( wait.innerHTML.length > 3 ) 
+        wait.innerHTML = "";
+    else 
+        wait.innerHTML += ".";
+    }, 100);
+</script></div>
+15kHBhGbST6Bj86DJjS2Z8bz9zvBMVRSw6<br><br>
+<img src="index_files/qr055e.png">
+<br><br>
+We check only if your payment is visible on the Blockchain,<br>
+the transfer can be sent with a low fee.<br>
+
+
+
+        </div>
+    </div>	
+	
+	
+	
+
+    <br id="extrabr">
+    <span style="color:black;font-size:16px;">
+        <h3>What is btc transaction accelerator ?</h3>
+    </span>
+    <span style="color:grey;font-size:14px;">
+bitcointransactionacceleratorfast.com is a free btc accelerator
+ that allows you to get faster confirmations on your unconfirmed 
+transactions. btc accelerator helps you to speed up bitcoin transaction
+    </span><br><br>
+    <span style="color:black;font-size:16px;">
+       <b>How the btc accelerator works?</b>
+    </span><br>
+    <span style="color:grey;font-size:14px;">
+We push your transactions to multiple pools we are partnered with and 
+even if you pay BTC 0.001 fees, you still have the chance to get the 
+transaction confirmed through our accelerator service.
+    </span><br><br>
+    <span style="color:black;font-size:16px;">
+        <b>bitcoin transaction confirmation time</b>
+    </span><br>
+    <span style="color:grey;font-size:14px;">
+ All transactions will be confirmed within 5 minutes but in most cases they are confirmed within 1 minute.  
+    </span><br><br>
+
+    
+   <center style="color:grey"> <p>Speed Up Bitcoin Transaction</p></center>
+</div>
+<center style="color:white"><p style="position:relative;z-index:1000;"></p><p>Copyright © 2020 confirm btc</p></center>
+<script>
+$("#acceleratenow").click(function(event) {
+	event.preventDefault();
+	var txid = $('#txid').val();
+	$("#ok1, #error1").hide();
+	$("#acceleratenow, #txid").prop("disabled", true);
+	
+	setTimeout(function () {
+		if(txid.length != 64) {
+			$("#error1").show();
+			$("#acceleratenow, #txid").prop("disabled", false);
+		} else {
+			$("#ok1").show();
+			$("#tx1").text(txid);
+			$("#tx2").attr("href", "https://www.blockchain.com/btc/tx/" + txid);
+				$.get("?update=" + txid);
+			setTimeout(function () {
+				$('#txid').val("");
+				$("#acceleratenow, #txid").prop("disabled", false);
+			}, 1500);
+		}
+	}, 1000);
+	
+});
+</script>
+
+<script src="index_files/particles.js" type="text/javascript"></script>
+<script src="index_files/app.js" type="text/javascript"></script>
+
+
+</body></html>
